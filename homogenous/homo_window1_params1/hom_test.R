@@ -345,7 +345,6 @@ stack_feature_results = function(res_list, response_par = NULL) {
   Np = cbind(Np_all, Np_type1, Np_type2)
   aux_input = beta_mat
   out = list(X = X_ok[keep_pcf], keep_true = keep_true, keep_pcf = keep_pcf, pcf_input = pcf_input, count_img = count_img, aux_input = aux_input, beta_input = beta_mat, Np = Np)
-  #out$X = X_ok[keep_pcf]
   
   if (!is.null(response_par)) {
     response_par_ok = response_par[keep_true, , drop = FALSE]
