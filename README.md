@@ -7,7 +7,7 @@ Code, simulations, and application to gorilla dataset for deep simulation-based 
 We consider a bivariate log-Gaussian Cox process with point types (p \in {1,2}). The observed multitype point pattern is denoted by $X = {X_1, X_2},$ where $X_p$ contains the observed locations of points of type $p$.
 
 For each type, the spatially varying intensity is defined by
-$$\log \left{\Lambda_p(\mathbf{s})\right} = \mathbf{Z}(\mathbf{s})^\top \boldsymbol{\beta}_p + Y(\mathbf{s}) + U_p(\mathbf{s}), \qquad p \in {1,2},$$
+$$\log \{\Lambda_p(\mathbf{s})\} = \mathbf{Z}(\mathbf{s})^\top \boldsymbol{\beta}_p + Y(\mathbf{s}) + U_p(\mathbf{s}), \: p \in {1,2},$$
 
 where:
 * $\mathbf{s}$ denotes a spatial location;
