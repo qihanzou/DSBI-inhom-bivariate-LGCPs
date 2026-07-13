@@ -8,11 +8,11 @@
 
 ## Main Model
 
-We consider a bivariate log-Gaussian Cox process with point types $p \in \lbrace 1,2 \rbrace$. The observed multitype point pattern is denoted by $X = \{X_1, X_2\},$ where $X_p$ contains the observed locations of points of type $p$.
+We consider a bivariate log-Gaussian Cox process with point types $p \in \lbrace 1,2 \rbrace$. The observed multitype point pattern is denoted by $X = \lbrace X_1, X_2 \rbrace,$ where $X_p$ contains the observed locations of points of type $p$.
 
 For each type, the spatially varying intensity is defined by
 
-$$\log \{\Lambda_p(\mathbf{s})\} = \mathbf{Z}(\mathbf{s})^\top \boldsymbol{\beta}_p + Y(\mathbf{s}) + U_p(\mathbf{s}), \quad p \in {1,2},$$
+$$\log \lbrace \Lambda_p(\mathbf{s}) \rbrace = \mathbf{Z}(\mathbf{s})^\top \boldsymbol{\beta}_p + Y(\mathbf{s}) + U_p(\mathbf{s}), \quad p \in \lbrace 1,2 \rbrace,$$
 
 where:
 * $\mathbf{s}$ denotes a spatial location;
