@@ -14,7 +14,7 @@ library(terra)
 library(abind)
 library(progressr)
 plan(multisession, workers = parallelly::availableCores() - 1)
-R_address = "C:/Users/qihan/Desktop/DSBI_bivariateLGCP"
+R_address = "C:/Users/qihan/Desktop"
 setwd(R_address)
 
 simulate_grf = function(nx, ny, L, range, var) {
@@ -395,7 +395,6 @@ save.image("C:/Users/qihan/Desktop/DSBI_bivariateLGCP/33sim2_training.RData")
 # ------------------------------------------------------------------------------
 # Test
 ntest = 5000
-#set.seed(2025)
 set.seed(2027)
 beta0_1_test = runif(ntest, 5.5, 6.5)
 beta0_2_test = runif(ntest, 5.5, 6.5)
@@ -425,7 +424,7 @@ with_progress({
       params = build_param_list(j, beta0_1_test, beta0_2_test, beta1_1_test, beta1_2_test, beta2_1_test, beta2_2_test, sigma_y_test, sigma_u_1_test, sigma_u_2_test, scale_y_test, scale_u_1_test, scale_u_2_test, Z1, Z2)
       extract_one_case_features(params, r, image_nxy_set = image_nxy_set)
     },
-    future.seed = 2027, #2025,
+    future.seed = 2027, 
     future.packages = c("spatstat.geom", "spatstat.explore", "spatstat.random", "spatstat.model", "terra", "abind")
   )
 })
