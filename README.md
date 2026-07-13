@@ -1,6 +1,35 @@
 # dsbi-inhom-bivariate-lgcp
-Code and simulations for deep simulation-based inference in inhomogeneous bivariate log-Gaussian Cox process models.
 
-We consider a bivariate log-Gaussian Cox process for types $p = 1,2$, we have two types of point patterns and $X=\{X_1, X_2\}$ and the following intensity structure, 
-$$\log\{\Lambda_p(\bm s)\} = \bm Z(\bm s)\bm \beta_p + Y(\bm s) + U_p(\bm s),$$
-where $Y(\bm s)$ is the shared field that affects all types of processes and $U_p(\bm s)$ individual field, which only affects individually the type $p$ process.
+Code, simulations, and experiments for deep simulation-based inference in inhomogeneous bivariate log-Gaussian Cox process models.
+
+## Model
+
+We consider a bivariate log-Gaussian Cox process with point types (p \in {1,2}). The observed multitype point pattern is denoted by
+
+[
+X = {X_1, X_2},
+]
+
+where (X_p) contains the observed locations of points of type (p).
+
+For each type, the spatially varying intensity is defined by
+
+[
+\log \left{\Lambda_p(\mathbf{s})\right}
+= \mathbf{Z}(\mathbf{s})^\top \boldsymbol{\beta}_p
++
+Y(\mathbf{s})
++
+U_p(\mathbf{s}),
+\qquad p \in {1,2},
+]
+
+where:
+
+* (\mathbf{s}) denotes a spatial location;
+* (\mathbf{Z}(\mathbf{s})) is a vector of spatial covariates;
+* (\boldsymbol{\beta}_p) is the type-specific vector of regression coefficients;
+* (Y(\mathbf{s})) is a shared latent spatial field that induces dependence between the two point processes; and
+* (U_p(\mathbf{s})) is a type-specific latent spatial field that captures residual spatial variation unique to process (p).
+
+This decomposition allows the model to represent both spatial dependence shared across the two point types and spatial variation specific to each type.
