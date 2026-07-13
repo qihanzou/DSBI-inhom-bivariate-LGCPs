@@ -14,7 +14,7 @@ library(terra)
 library(abind)
 library(progressr)
 plan(multisession, workers = parallelly::availableCores() - 1)
-R_address = "C:/Users/qihan/Desktop/DSBI_bivariateLGCP"
+R_address = "C:/Users/qihan/Desktop"
 setwd(R_address)
 
 simulate_grf = function(nx, ny, L, range, var) {
@@ -338,7 +338,7 @@ img_train = train_data$count_img
 Y_train = train_data$Y
 aux_train = train_data$aux_input
 
-save.image("C:/Users/qihan/Desktop/DSBI_bivariateLGCP/sim1_training.RData")
+save.image("C:/Users/qihan/Desktop/sim1_training.RData")
 
 
 
