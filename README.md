@@ -1,4 +1,5 @@
 # Deep Simulation-Based Inference for Inhomogeneous Bivariate Log-Gaussian Cox Processes
+## Qihan Zou, Yan Wang, Tingjin Chu, Zhengdong Huang
 
 ## Abstract
 
