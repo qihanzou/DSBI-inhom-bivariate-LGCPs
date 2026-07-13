@@ -20,5 +20,3 @@ where:
 * $\boldsymbol{\beta}_p$ is the type-specific vector of first-order parameters;
 * $Y(\mathbf{s})$ is a shared latent spatial field that induces dependence between the two point processes; and
 * $U_p(\mathbf{s})$ is a type-specific latent spatial field that captures spatial variation unique to process $p$.
-
-This decomposition allows the model to represent both spatial dependence shared across the two point types and spatial variation specific to each type.
