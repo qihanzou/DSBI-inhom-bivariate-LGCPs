@@ -9,7 +9,7 @@ We propose a computationally efficient simulation-based estimation method with a
 
 ## Main Model
 
-We consider a bivariate log-Gaussian Cox process with point types (p \in {1,2}). The observed multitype point pattern is denoted by $X = {X_1, X_2},$ where $X_p$ contains the observed locations of points of type $p$.
+We consider a bivariate log-Gaussian Cox process with point types $p \in {1,2}$. The observed multitype point pattern is denoted by $X = {X_1, X_2},$ where $X_p$ contains the observed locations of points of type $p$.
 
 For each type, the spatially varying intensity is defined by
 
