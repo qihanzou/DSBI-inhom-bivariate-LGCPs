@@ -1,4 +1,4 @@
-# dsbi-inhom-bivariate-lgcp
+# Deep Simulation-Based Inference for Inhomogeneous Bivariate Log-Gaussian Cox Processes
 
 Code and simulations for deep simulation-based inference in inhomogeneous bivariate log-Gaussian Cox process models, with an application to the gorilla dataset.
 
