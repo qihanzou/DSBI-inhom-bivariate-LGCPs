@@ -5,6 +5,7 @@
 We propose a computationally efficient simulation-based estimation method with a two-step procedure for inhomogeneous bivariate Log-Gaussian Cox Processes. It combines classical Poisson estimation for the first-order parameters with simulation-based inference using neural networks for the latent field parameters. By separating the estimations, it reduces the complexity of high dimensional parameter estimation and the need for the simulation-based method to specify broad parameter ranges in the presence of covariates. In addition, we introduce two dimensional image inputs that enable the model to learn spatial information directly. Simulation results demonstrate that the proposed approach provides accurate estimates of the latent field parameters. We further illustrate the method's practical applicability using the gorilla dataset.
 
 
+## Description
 
 Code and simulations for deep simulation-based inference in inhomogeneous bivariate log-Gaussian Cox process models, with an application to the gorilla dataset.
 
